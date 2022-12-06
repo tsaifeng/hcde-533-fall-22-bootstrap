@@ -1,0 +1,100 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Joyce</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Joyce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/assg_1_bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1> A4: Subtractive Manufacturing!</h1>
+                            <h2 class="subheading">CNC milling a box</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Joyce</a>
+                                on November 2, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>The documentaion for this week includes how I used the Other Milling Machine to create a box. Below is a picture of the final output. </p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/assg4_box.jpg"/></a>
+                        <p>I started with drafting how the box should look like. There are 3 main things that I need to take into consideration. First is the size of the FR1 board; second is the size of the different surfaces of the box; third is the dimension of the T bone. Eventually, I decided that the size of the t bone will be 4mm * 2mm with a portruding circle that has a diameter of 1 mm. I kept the extruding and intruding parts at the same width, which eventually caused me lots of trouble. </p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/assg4_draft.jpg"/></a>
+                        <p>To make it digital, I drew out the shapes in Adobe Illustrator. Next, I converted the file to Rhino so I could mesure the sizes of each piece. At this step, I made the mistake of extruding the shapes, which I later found out was unnecessary when I was using Bantam. Then I added a text and created a saparate layer for it. I hid one layer first and "exported selected" so I got 2 individual DXF files for the outline and the engraving. <br>  </p>
+                        <p>Afterwards, I followed the instructions on the slide and used KidCad to make some adustments and converted the fiile to gbr format. For the engraving, I set the line width as 0.3 mm. <br> 
+                        <p>Lastly, I went to the Mill and opened up Bantam to prepare for milling. I measured the height of a FR1 board first, and then I pasted them together and measured the height again to calculate the offset number. Afterwards, I joggled the bed and adjusted both x and y to zero. <br>  </p>
+                        <p>Everything was ready and I started milling. Unfortunately, the bit fractured so I had to stop and install a new one. It's important to select "install tool" and "rehome" after installing a new bit, which I missed at first </p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/assg4_install.jpg"/></a>
+                        <p>After making all the adjustments, I successfully milled the outlines of the box. However, I realized that the extruding and intruding parts didn't fit together. Therefore, I made adjustments in my Rhino file and decreased the width of the extruding part by about 8% and I milled again. Unfortunately, they still didn't fit. Eventually, I measured the shapes several times and decided to decrease the width by a total of 20%. They were still pretty tight, so I had to press super hard for them to fit.</p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/assg4_first.jpg" width="70%" alt="" class="center"/></a> <br>
+                        <p>I'm glad it eventually worked out after trial and error. It's still very confusing why I had to decrease the width by 20% for the parts to fit.</p> 
+                        <a href="#!"><img class="img-fluid" src="assets/img/assg4_final.jpg" width="70%" alt="" class="center"/></a>
+                        
+                        
+                        <p> ----- </p>
+                        <p> Below is the source file:</p>
+                        <a href="https://github.com/tsaifeng/hcde-533-fall-22-bootstrap/tree/main/dist/assets/file/Assig_4">
+                            3dm, dxf, gbr files
+                          </a>
+                        <p>-----</p>
+                        <p><b> Biggest thanks to Xenia and the 533 Support Group for all the help! </b></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Joyce 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
